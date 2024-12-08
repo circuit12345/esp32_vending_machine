@@ -176,14 +176,14 @@ void Status() {
     int statusCode = product_qty * 10 + count;  // Calculate status code
 
     switch (statusCode) {
-        case 12:
+        case 13:
             dwin.write(success, 8);      // Send success message
             dispense();                  // Dispense one product unit
             coinCount = 0;
             product_qty = 0;
             pageswitch();                // Switch pages on DWIN display
             break;
-        case 23:
+        case 26:
             dwin.write(success, 8);      // Send success message
             dispense2();                 // Dispense two product units
             coinCount = 0;
